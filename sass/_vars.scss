@@ -2,7 +2,11 @@
 
 // ### Primary
 
-$Linear-Gradient: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+$Linear-Gradient: linear-gradient(
+  to right,
+  hsl(236, 72%, 79%),
+  hsl(237, 63%, 64%)
+);
 
 // ### Neutral
 

@@ -121,6 +121,40 @@ body {
   align-items: center;
 }
 
+.toggle {
+  position: relative;
+  width: 55px;
+  height: 30px;
+  border: none;
+  border-radius: 30px;
+  background-image: linear-gradient(to right, #a3a8f0, #696fdd);
+  cursor: pointer;
+}
+.toggle:hover, .toggle:focus {
+  background-image: none;
+  background-color: #b3b5c6;
+  outline: none;
+}
+.toggle-slider {
+  position: absolute;
+  inset: 0;
+}
+.toggle-slider::before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 4px;
+  bottom: 4px;
+  border-radius: 50%;
+  transform: translateX(25px);
+  background-color: white;
+  transition: 0.4s;
+}
+.toggle--checked .toggle-slider::before {
+  transform: translateX(0);
+}
+
 .box {
   text-align: center;
   background-color: white;
@@ -129,6 +163,19 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.boxes .price-monthly {
+  display: inline-block;
+}
+.boxes .price-annually {
+  display: none;
+}
+.boxes--annually .price-monthly {
+  display: none;
+}
+.boxes--annually .price-annually {
+  display: inline-block;
 }
 
 /*# sourceMappingURL=style.css.map */

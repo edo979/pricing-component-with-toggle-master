@@ -29,14 +29,16 @@
         <h1 class="text-neutral-500">Our Pricing</h1>
         <div class="flex">
           <p class="text-neutral-400">Annually</p>
-          <div class="toggle">
-            <div class="toggle-ball"></div>
-          </div>
+
+          <button class="toggle" id="toggle" onclick="this.blur();">
+            <span class="toggle-slider"></span>
+          </button>
+
           <p class="text-neutral-400">Monthly</p>
         </div>
       </header>
 
-      <main class="boxes flex-md">
+      <main class="boxes flex-md" id="boxes">
         <div class="box box-neutral">
           <h2 class="box-title">Basic</h2>
           <p class="box-price">
@@ -87,5 +89,6 @@
         >. Coded by <a href="#">Your Name Here</a>.
       </footer>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

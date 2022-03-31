@@ -14,6 +14,55 @@
   align-items: center;
 }
 
+.toggle {
+  position: relative;
+  width: 55px;
+  height: 30px;
+
+  border: none;
+  border-radius: 30px;
+
+  background-image: $Linear-Gradient;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-image: none;
+    background-color: $Light-Grayish-Blue;
+    outline: none;
+  }
+
+  &-slider {
+    position: absolute;
+    inset: 0;
+
+    &::before {
+      position: absolute;
+      content: '';
+      height: 22px;
+      width: 22px;
+      left: 4px;
+      bottom: 4px;
+      border-radius: 50%;
+
+      transform: translateX(25px);
+
+      background-color: white;
+
+      transition: 0.4s;
+    }
+  }
+
+  &--checked {
+    .toggle-slider {
+      &::before {
+        transform: translateX(0);
+      }
+    }
+  }
+}
+
 .box {
   text-align: center;
 
@@ -23,5 +72,23 @@
     margin: 0;
     padding: 0;
     list-style: none;
+  }
+}
+
+.boxes {
+  .price-monthly {
+    display: inline-block;
+  }
+  .price-annually {
+    display: none;
+  }
+
+  &--annually {
+    .price-monthly {
+      display: none;
+    }
+    .price-annually {
+      display: inline-block;
+    }
   }
 }
