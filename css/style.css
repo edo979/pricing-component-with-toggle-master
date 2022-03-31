@@ -144,7 +144,7 @@ header .flex {
 .toggle {
   position: relative;
   width: 55px;
-  height: 30px;
+  height: 32px;
   border: none;
   border-radius: 30px;
   background-image: linear-gradient(to right, #a3a8f0, #696fdd);
@@ -162,12 +162,12 @@ header .flex {
 .toggle-slider::before {
   position: absolute;
   content: "";
-  height: 22px;
-  width: 22px;
+  height: 24px;
+  width: 24px;
   left: 4px;
   bottom: 4px;
   border-radius: 50%;
-  transform: translateX(25px);
+  transform: translateX(22px);
   background-color: white;
   transition: 0.4s;
 }
