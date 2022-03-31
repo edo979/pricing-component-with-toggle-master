@@ -1,5 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
 html {
   font-size: 15px;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.text-neutral-200 {
+  color: $Very-Light-Grayish-Blue;
+}
+.text-neutral-400 {
+  color: $Light-Grayish-Blue;
+}
+.text-neutral-500 {
+  color: $Grayish-Blue;
+}
+.text-neutral-600 {
+  color: $Dark-Grayish-Blue;
 }
