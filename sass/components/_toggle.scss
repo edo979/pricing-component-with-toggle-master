@@ -1,0 +1,48 @@
+.toggle {
+  position: relative;
+  width: 55px;
+  height: 32px;
+
+  border: none;
+  border-radius: 30px;
+
+  background-image: $Linear-Gradient;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-image: none;
+    background-color: $Light-Grayish-Blue;
+    outline: none;
+  }
+
+  &-slider {
+    position: absolute;
+    inset: 0;
+
+    &::before {
+      position: absolute;
+      content: '';
+      height: 24px;
+      width: 24px;
+      left: 4px;
+      bottom: 4px;
+      border-radius: 50%;
+
+      transform: translateX(22px);
+
+      background-color: white;
+
+      transition: 0.4s;
+    }
+  }
+
+  &--checked {
+    .toggle-slider {
+      &::before {
+        transform: translateX(0);
+      }
+    }
+  }
+}

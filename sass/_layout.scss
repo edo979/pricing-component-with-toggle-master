@@ -2,4 +2,6 @@ body {
   background-color: $Very-Light-Grayish-Blue;
 }
 
-@import 'components';
+@import 'components/components';
+@import 'components/toggle';
+@import 'components/boxes';
