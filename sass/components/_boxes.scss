@@ -57,6 +57,19 @@
     letter-spacing: 1px;
 
     background-image: $Linear-Gradient;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease-out;
+
+    &:hover,
+    &:focus {
+      outline: 2px solid $primary-color;
+
+      background-image: none;
+      background-color: transparent;
+      color: $primary-color;
+    }
   }
 
   &-primary {
@@ -71,7 +84,15 @@
     button {
       background-image: none;
       background-color: white;
-      color: hsl(237, 63%, 64%);
+      color: $primary-color;
+
+      &:hover,
+      &:focus {
+        outline: 2px solid white;
+        color: white;
+
+        background-color: transparent;
+      }
     }
   }
 }

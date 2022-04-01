@@ -258,6 +258,14 @@ header .flex {
   line-height: 1;
   letter-spacing: 1px;
   background-image: linear-gradient(to right, #a3a8f0, #696fdd);
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+.box button:hover, .box button:focus {
+  outline: 2px solid #696fdd;
+  background-image: none;
+  background-color: transparent;
+  color: #696fdd;
 }
 .box-primary {
   background-image: linear-gradient(to right, #a3a8f0, #696fdd);
@@ -271,6 +279,11 @@ header .flex {
   background-image: none;
   background-color: white;
   color: #696fdd;
+}
+.box-primary button:hover, .box-primary button:focus {
+  outline: 2px solid white;
+  color: white;
+  background-color: transparent;
 }
 
 .boxes {
