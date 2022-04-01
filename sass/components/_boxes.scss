@@ -95,3 +95,20 @@
     }
   }
 }
+
+@include mq {
+  .boxes {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+  }
+
+  .box {
+    min-width: 350px;
+
+    &-primary {
+      padding-block: 3.25rem;
+    }
+  }
+}

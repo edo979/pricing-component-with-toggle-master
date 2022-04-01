@@ -34,3 +34,30 @@ header {
     gap: 2rem;
   }
 }
+
+@include mq {
+  .main-container {
+  }
+
+  body {
+    position: relative;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+  }
+
+  .attribution {
+    position: absolute;
+  }
+
+  h1 {
+    margin: 0;
+  }
+
+  header {
+    .flex {
+      margin-bottom: 5rem;
+    }
+  }
+}
