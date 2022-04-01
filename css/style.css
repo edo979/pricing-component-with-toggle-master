@@ -154,6 +154,13 @@ header .flex {
     place-items: center;
   }
 
+  .main-container {
+    width: max(1440px, 95vw);
+    background-image: url(../images/bg-top.svg), url(../images/bg-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: top right, bottom left;
+  }
+
   .attribution {
     position: absolute;
   }
@@ -162,6 +169,9 @@ header .flex {
     margin: 0;
   }
 
+  header {
+    background-image: none;
+  }
   header .flex {
     margin-bottom: 5rem;
   }
@@ -206,6 +216,7 @@ header .flex {
   text-align: center;
   color: #6d708d;
   background-color: white;
+  box-shadow: 0 0 30px rgba(73, 76, 95, 0.1);
 }
 .box h2 {
   font-size: 1.25rem;

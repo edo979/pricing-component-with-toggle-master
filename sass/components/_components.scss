@@ -44,6 +44,13 @@ header {
     place-items: center;
   }
 
+  .main-container {
+    width: max(1440px, 95vw);
+    background-image: url(../images/bg-top.svg), url(../images/bg-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: top right, bottom left;
+  }
+
   .attribution {
     position: absolute;
   }
@@ -53,6 +60,7 @@ header {
   }
 
   header {
+    background-image: none;
     .flex {
       margin-bottom: 5rem;
     }
